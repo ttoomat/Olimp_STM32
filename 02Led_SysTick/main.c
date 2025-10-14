@@ -18,7 +18,7 @@ void SysTick_Handler() {
 }
 
 void SysTick_Init() {
-  // до скольки он считает
+  // РґРѕ СЃРєРѕР»СЊРєРё РѕРЅ СЃС‡РёС‚Р°РµС‚
   SysTick->LOAD = (uint32_t)(16000000-1);
   // internal clock
   SysTick->CTRL |= (1U << 2);
